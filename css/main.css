@@ -1,0 +1,293 @@
+@charset "UTF-8";
+@import url(default.css);
+@import url(font.css);
+#wrapper { width: 100%; max-width: 1920px; }
+
+/*헤더*/
+#header { width: 100%; height: 90px; background: #023586; }
+
+#header .inner { width: 1470px; height: 90px; padding: 0 25px; margin: 0 auto; }
+
+#header .inner #nav { display: flex; justify-content: space-between; font-weight: 500; }
+
+#header .inner #nav .gnb .gnb-left ul li, #header .inner #nav .gnb .gnb-right ul li { position: relative; display: inline-block; font-size: 0; }
+
+#header .inner #nav .gnb .gnb-left ul li a, #header .inner #nav .gnb .gnb-right ul li a { font-size: 1.4rem; letter-spacing: 0.2em; color: #fff; line-height: 90px; padding: 0 12px; }
+
+#header .inner #nav .gnb .gnb-left ul li a:after, #header .inner #nav .gnb .gnb-right ul li a:after { content: ''; position: absolute; background-color: #fff; height: 2px; width: 0; left: 0; bottom: 0; line-height: 90px; transition: 0.7s; }
+
+#header .inner #nav .gnb .gnb-left ul li a:hover:after, #header .inner #nav .gnb .gnb-right ul li a:hover:after { width: 100%; }
+
+#header .inner #nav .gnb .gnb-right { display: flex; text-align: right; }
+
+#header .inner #nav .gnb .gnb-right .btn-search .material-icons { font-family: 'Material Icons'; display: inline-block; font-size: 24px; margin-left: 12px; vertical-align: middle; color: #fff; line-height: 90px; }
+
+#header .inner #nav .br-logo a { display: inline-block; font-size: 2.8rem; color: #fff; line-height: 90px; }
+
+/*슬라이드*/
+#slide-section { width: 100%; max-width: 1920px; display: flex; background-color: #fff; padding: 0 0 80px 0; }
+
+#slide-section .slide-section-inner .slide-section-flex-box { max-width: 1920px; display: inline-grid; grid-template-columns: repeat(3, 1fr); /*hover 안돼는 이유*/ }
+
+#slide-section .slide-section-inner .slide-section-flex-box div a { display: block; width: 100%; height: auto; }
+
+#slide-section .slide-section-inner .slide-section-flex-box div a img { width: 100%; display: block; }
+
+#slide-section .slide-section-inner .slide-section-flex-box div a:after { content: ''; display: block; width: 100%; height: 100%; background-color: #000; }
+
+#slide-section .slide-section-inner .slide-section-flex-box div a:hover:after { opacity: 0.8; }
+
+/*PB magazine*/
+#pb-magazine-section { width: 100%; max-width: 1920px; padding: 80px 0; }
+
+#pb-magazine-section .pb-magazine-inner { width: 1470px; padding: 0 25px; background-color: #fff; margin: 0 auto; }
+
+#pb-magazine-section .pb-magazine-inner .pb-magazine-tit { display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 30px; }
+
+#pb-magazine-section .pb-magazine-inner .pb-magazine-tit h2 { font-size: 2.4rem; font-weight: 700; }
+
+#pb-magazine-section .pb-magazine-inner .pb-magazine-tit .btn-more { display: block; line-height: 24px; line-height: 24px; font-size: 1.4rem; font-weight: 700; letter-spacing: 0.1rem; border-bottom: 2px solid #111; }
+
+#pb-magazine-section .pb-magazine-inner .pb-magazine-banner .pb-magazine-flex { display: flex; margin: -12px; }
+
+#pb-magazine-section .pb-magazine-inner .pb-magazine-banner .pb-magazine-flex .pb-magazine-item { position: relative; padding: 12px; width: 100%; }
+
+#pb-magazine-section .pb-magazine-inner .pb-magazine-banner .pb-magazine-flex .pb-magazine-item .pb-magazine-banner-img { position: relative; /*그라데이션 안됨*/ }
+
+#pb-magazine-section .pb-magazine-inner .pb-magazine-banner .pb-magazine-flex .pb-magazine-item .pb-magazine-banner-img a { display: block; width: 100%; }
+
+#pb-magazine-section .pb-magazine-inner .pb-magazine-banner .pb-magazine-flex .pb-magazine-item .pb-magazine-banner-img a img { display: block; width: 100%; }
+
+#pb-magazine-section .pb-magazine-inner .pb-magazine-banner .pb-magazine-flex .pb-magazine-item .pb-magazine-banner-img .pb-magazine-banner-tit { position: absolute; left: 0; bottom: 0; z-index: 99; padding: 24px 30px; }
+
+#pb-magazine-section .pb-magazine-inner .pb-magazine-banner .pb-magazine-flex .pb-magazine-item .pb-magazine-banner-img .pb-magazine-banner-tit h3 a { font-size: 2.8rem; font-weight: 700; letter-spacing: 1.5px; color: #fff; margin-bottom: 16px; }
+
+#pb-magazine-section .pb-magazine-inner .pb-magazine-banner .pb-magazine-flex .pb-magazine-item .pb-magazine-banner-img .pb-magazine-banner-tit p { font-size: 1.6rem; font-weight: 500; color: #fff; line-height: 1.5; }
+
+#pb-magazine-section .pb-magazine-inner .pb-magazine-banner .pb-magazine-flex .pb-magazine-item .pb-magazine-banner-img:after { content: ''; display: block; width: 100%; height: 50; }
+
+/*PB STORY*/
+#pb-story-section { width: 100%; max-width: 1920px; padding: 80px 0; margin: 0 auto; }
+
+#pb-story-section .pb-story-section-inner { width: 1470px; padding: 0 5px; margin: 0 auto; }
+
+#pb-story-section .pb-story-section-inner .pb-magazine-tit { display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 30px; padding: 0 12px; }
+
+#pb-story-section .pb-story-section-inner .pb-magazine-tit h2 { font-size: 2.4rem; font-weight: 700; }
+
+#pb-story-section .pb-story-section-inner .pb-magazine-tit .btn-more { display: block; line-height: 24px; font-size: 1.4rem; font-weight: 700; letter-spacing: 0.1rem; border-bottom: 2px solid #111; }
+
+#pb-story-section .pb-story-section-inner .pb-story-item-flex { display: flex; flex-wrap: wrap; flex-direction: row; align-items: baseline; flex-basis: 50%; }
+
+#pb-story-section .pb-story-section-inner .pb-story-item-flex .pb-story-item-list { display: flex; width: 50%; padding: 12px; box-sizing: border-box; }
+
+#pb-story-section .pb-story-section-inner .pb-story-item-flex .pb-story-item-list .pb-story-thumb { margin-right: 36px; }
+
+#pb-story-section .pb-story-section-inner .pb-story-item-flex .pb-story-item-list .pb-story-thumb a { width: 100%; display: block; background-color: aqua; height: 337px; /*이미지 높이가 안맞음*/ }
+
+#pb-story-section .pb-story-section-inner .pb-story-item-flex .pb-story-item-list .pb-story-thumb a img { display: block; width: 100%; height: auto; }
+
+#pb-story-section .pb-story-section-inner .pb-story-item-flex .pb-story-item-list .desc p { font-size: 1.4rem; color: #023586; text-align: left; margin-bottom: 16px; }
+
+#pb-story-section .pb-story-section-inner .pb-story-item-flex .pb-story-item-list .desc p:hover { text-decoration: underline; text-decoration-color: #023586; cursor: pointer; }
+
+#pb-story-section .pb-story-section-inner .pb-story-item-flex .pb-story-item-list .desc h3 { font-size: 2.4rem; color: #111; font-weight: 700px; text-align: l; letter-spacing: 1.5px; margin-bottom: 16px; }
+
+#pb-story-section .pb-story-section-inner .pb-story-item-flex .pb-story-item-list .desc h3:hover { text-decoration: underline; text-decoration-color: #023586; cursor: pointer; }
+
+#pb-story-section .pb-story-section-inner .pb-story-item-flex .pb-story-item-list .desc .post p { font-size: 1.4rem; color: #4a4a4a; }
+
+#pb-story-section .pb-story-section-inner .pb-story-item-flex .pb-story-item-list .desc .post p:hover { text-decoration: underline; text-decoration-color: #023586; cursor: pointer; }
+
+#pb-story-section .pb-story-section-inner .pb-story-item-flex .pb-story-item-list .desc .post-date { font-size: 1rem; color: #111; }
+
+/*PROMOTION*/
+#pb-promotion-section { width: 100%; max-width: 1920px; padding: 80px 0; margin: 0 auto; }
+
+#pb-promotion-section .pb-promotion-section-inner { width: 1470px; padding: 0 5px; margin: 0 auto; }
+
+#pb-promotion-section .pb-promotion-section-inner .pb-promotion-tit { display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 30px; padding: 0 12px; }
+
+#pb-promotion-section .pb-promotion-section-inner .pb-promotion-tit h2 { font-size: 2.4rem; font-weight: 700; }
+
+#pb-promotion-section .pb-promotion-section-inner .pb-promotion-tit .btn-more { display: block; line-height: 24px; font-size: 1.4rem; font-weight: 700; letter-spacing: 0.1rem; border-bottom: 2px solid #111; }
+
+#pb-promotion-section .pb-promotion-section-inner .pb-promotion-item .pb-promotion-item-flex { display: flex; justify-content: space-around; flex: 1; }
+
+#pb-promotion-section .pb-promotion-section-inner .pb-promotion-item .pb-promotion-item-flex li { width: 25%; padding: 0 12px; position: relative; }
+
+#pb-promotion-section .pb-promotion-section-inner .pb-promotion-item .pb-promotion-item-flex li .promotion-img { margin-bottom: 18px; }
+
+#pb-promotion-section .pb-promotion-section-inner .pb-promotion-item .pb-promotion-item-flex li .promotion-img a { position: relative; display: block; width: 100%; height: auto; }
+
+#pb-promotion-section .pb-promotion-section-inner .pb-promotion-item .pb-promotion-item-flex li .promotion-img a img { display: block; width: 100%; }
+
+#pb-promotion-section .pb-promotion-section-inner .pb-promotion-item .pb-promotion-item-flex li .promotion-img p { position: absolute; top: 0; left: 12px; font-size: 1rem; font-weight: 500; color: #fff; background-color: #023586; padding: 4px 8px; }
+
+#pb-promotion-section .pb-promotion-section-inner .pb-promotion-item .pb-promotion-item-flex li .post { margin-bottom: 18px; }
+
+#pb-promotion-section .pb-promotion-section-inner .pb-promotion-item .pb-promotion-item-flex li .post h3 { font-size: 1.8rem; letter-spacing: 1.5; margin: 4px 0 10px; font-weight: 700; }
+
+#pb-promotion-section .pb-promotion-section-inner .pb-promotion-item .pb-promotion-item-flex li .post .readmore a { font-size: 1.2rem; color: #888; }
+
+#pb-promotion-section .pb-promotion-section-inner .pb-promotion-item .pb-promotion-item-flex li .post .readmore a:hover { text-decoration: underline; }
+
+/*products*/
+#products-section { width: 100%; max-width: 1920px; padding: 80px 0; margin: 0 auto; }
+
+#products-section .products-section-inner { width: 1470px; padding: 0 5px; margin: 0 auto; }
+
+#products-section .products-section-inner .products-tit { display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 30px; padding: 0 12px; }
+
+#products-section .products-section-inner .products-tit h2 { font-size: 2.4rem; font-weight: 700; }
+
+#products-section .products-section-inner .products-tit .btn-more { display: block; line-height: 24px; font-size: 1.4rem; font-weight: 700; letter-spacing: 0.1rem; border-bottom: 2px solid #111; }
+
+#products-section .products-section-inner #product-item .product-item-inner { position: relative; }
+
+#products-section .products-section-inner #product-item .product-item-inner .product-item-flex { width: 1420px; display: flex; justify-content: space-around; }
+
+#products-section .products-section-inner #product-item .product-item-inner .product-item-flex li { padding: 12px; width: 20%; }
+
+#products-section .products-section-inner #product-item .product-item-inner .product-item-flex li .product-item-list { position: relative; margin-bottom: 22px; }
+
+#products-section .products-section-inner #product-item .product-item-inner .product-item-flex li .product-item-list:hover:after { position: absolute; top: 0; left: 0; content: ''; display: block; width: 100%; height: 100%; background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)); }
+
+#products-section .products-section-inner #product-item .product-item-inner .product-item-flex li .product-item-list a { display: block; }
+
+#products-section .products-section-inner #product-item .product-item-inner .product-item-flex li .product-item-list a img { display: block; width: 100%; }
+
+#products-section .products-section-inner #product-item .product-item-inner .product-item-flex li .product-tit h3 { font-size: 12px; }
+
+#products-section .products-section-inner #product-item .product-item-inner .product-item-flex li .product-tit h3 a { color: #000; font-weight: 700; }
+
+#products-section .products-section-inner #product-item .product-item-inner .product-item-flex li .product-tit h3 a:hover { cursor: pointer; text-decoration: underline; }
+
+#products-section .products-section-inner #product-item-btn { position: absolute; top: 50%; left: 0; width: 100%; display: flex; justify-content: space-between; }
+
+#products-section .products-section-inner #product-item-btn .material-icons { font-size: 44px; transform: translateY(-50%); color: #ccc; margin-top: -10px; }
+
+/*파리바게트 인스타그램*/
+#pb-instagram-section { width: 100%; height: 100%; max-width: 1920px; padding: 80px 0; margin: 0 auto; }
+
+#pb-instagram-section .pb-instagram-section-inner { width: 1470px; padding: 0 5px; margin: 0 auto; height: auto; }
+
+#pb-instagram-section .pb-instagram-section-inner .pb-instagram-tit { margin-bottom: 30px; padding: 0 12px; }
+
+#pb-instagram-section .pb-instagram-section-inner .pb-instagram-tit h2 { font-size: 2.4rem; font-weight: 700; text-align: center; margin-bottom: 30px; }
+
+#pb-instagram-section .pb-instagram-section-inner .pb-instagram-tit .btn-more { display: block; line-height: 24px; font-size: 1.4rem; font-weight: 700; letter-spacing: 0.1rem; text-align: center; }
+
+#pb-instagram-img { width: 100%; max-width: 1920px; height: 100%; }
+
+#pb-instagram-img .pb-insta-flex { width: 100%; display: flex; flex-wrap: nowrap; }
+
+#pb-instagram-img .pb-insta-flex .pb-insta-item { position: relative; top: 0; width: calc(100%/6); height: 100%; background-color: #888; }
+
+#pb-instagram-img .pb-insta-flex .pb-insta-item img { display: block; width: 100%; height: 100%; }
+
+#pb-instagram-img .pb-insta-flex .pb-insta-item .pb-insta-item-text { width: 100%; height: 100%; position: absolute; top: 0px; left: 0; z-index: 10; padding: 40px 20px; box-sizing: border-box; background-color: rgba(0, 0, 0, 0.5); opacity: 0; }
+
+#pb-instagram-img .pb-insta-flex .pb-insta-item .pb-insta-item-text:hover { opacity: 1; }
+
+#pb-instagram-img .pb-insta-flex .pb-insta-item .pb-insta-item-text .pb-insta-hover { display: block; width: 100%; height: 100%; }
+
+#pb-instagram-img .pb-insta-flex .pb-insta-item .pb-insta-item-text .pb-insta-hover .insta-post-info { display: flex; }
+
+#pb-instagram-img .pb-insta-flex .pb-insta-item .pb-insta-item-text .pb-insta-hover .insta-post-info li { display: inline-block; width: 100%; margin: 32px; }
+
+#pb-instagram-img .pb-insta-flex .pb-insta-item .pb-insta-item-text .pb-insta-hover .insta-post-info li i { font-size: 1.8rem; font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 48; color: #fff; }
+
+#pb-instagram-img .pb-insta-flex .pb-insta-item .pb-insta-item-text .pb-insta-hover .insta-post-info li span { font-size: 1.8rem; color: #fff; }
+
+#pb-instagram-img .pb-insta-flex .pb-insta-item .pb-insta-item-text .pb-insta-hover p { padding: 29px 30px; font-size: 1.4rem; font-weight: 500; color: #fff; }
+
+/*고객센터, 제휴카드안내, 공지사항*/
+#home-notice { width: 100%; max-width: 1920px; }
+
+#home-notice .home-notice-inner { display: flex; flex-wrap: wrap; }
+
+#home-notice .home-notice-inner .customer-service { width: calc(100%/3); position: relative; top: 0; flex: 1; padding: 50px 50px 50px 50px; }
+
+#home-notice .home-notice-inner .customer-service:hover { box-shadow: rgba(0, 0, 0, 0.5); background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)); transition: opacity 3s ease-out, whidth .3s ease-out; }
+
+#home-notice .home-notice-inner .customer-service:after { content: ''; position: absolute; top: 0; left: 0; display: block; width: 100%; height: 50%; border-right: 1px solid #000; line-height: auto; transform: translateY(50%); }
+
+#home-notice .home-notice-inner h2 { margin-bottom: 16px; padding-left: 20px; }
+
+#home-notice .home-notice-inner h2 a { font-size: 1.4rem; font-weight: 500; color: #1e73be; }
+
+#home-notice .home-notice-inner p { display: flex; align-items: middle; }
+
+#home-notice .home-notice-inner p a { font-size: 1.8rem; font-weight: 500; color: #515151; padding-left: 20px; }
+
+#home-notice .home-notice-inner p .material-icons { font-size: 2.8rem; }
+
+/*푸터*/
+#pb-footer { background-color: #454a56; }
+
+#pb-footer .pb-footer-container { padding: 0 25px; max-width: 1420px; margin: 0 auto; }
+
+#pb-footer .pb-footer-container .pb-footer-inner { padding: 70px 0; display: flex; justify-content: space-around; /*푸터 sns로고, 브랜드 사이트*/ }
+
+#pb-footer .pb-footer-container .pb-footer-inner .pb-foot-info h2, #pb-footer .pb-footer-container .pb-footer-inner .pb-foot-contactus h2, #pb-footer .pb-footer-container .pb-footer-inner .pb-foot-sns h2 { font-size: 2.4rem; font-weight: 900; color: #fff; margin-bottom: 20px; }
+
+#pb-footer .pb-footer-container .pb-footer-inner .pb-foot-info ul li, #pb-footer .pb-footer-container .pb-footer-inner .pb-foot-contactus ul li { margin-bottom: 15px; }
+
+#pb-footer .pb-footer-container .pb-footer-inner .pb-foot-info ul li a, #pb-footer .pb-footer-container .pb-footer-inner .pb-foot-contactus ul li a { font-size: 1.4rem; color: #fff; line-height: 1.5; }
+
+#pb-footer .pb-footer-container .pb-footer-inner .pb-foot-info ul li:hover, #pb-footer .pb-footer-container .pb-footer-inner .pb-foot-contactus ul li:hover { text-decoration: underline; text-decoration-color: #fff; }
+
+#pb-footer .pb-footer-container .pb-footer-inner .foot-logo .spc-logo img { height: 40px; display: block; margin: 0 10px 20px 0; }
+
+#pb-footer .pb-footer-container .pb-footer-inner .foot-logo .foot-logo-box a { display: inline-block; }
+
+#pb-footer .pb-footer-container .pb-footer-inner .foot-logo .foot-logo-box a img { display: block; height: 34px; margin: 0 10px 20px 0; }
+
+#pb-footer .pb-footer-container .pb-footer-inner .pb-foot-sns { /*브랜드 사이트*/ }
+
+#pb-footer .pb-footer-container .pb-footer-inner .pb-foot-sns .pb-foot-icons { display: flex; gap: 16px; margin-bottom: 16px; }
+
+#pb-footer .pb-footer-container .pb-footer-inner .pb-foot-sns .pb-foot-icons li a { display: block; width: 44px; height: 44px; border-radius: 50%; background-color: #fff; padding: 7px 10px; box-sizing: border-box; }
+
+#pb-footer .pb-footer-container .pb-footer-inner .pb-foot-sns .pb-foot-icons li a .facebook, #pb-footer .pb-footer-container .pb-footer-inner .pb-foot-sns .pb-foot-icons li a .insta, #pb-footer .pb-footer-container .pb-footer-inner .pb-foot-sns .pb-foot-icons li a .youtube { text-align: center; }
+
+#pb-footer .pb-footer-container .pb-footer-inner .pb-foot-sns .pb-foot-icons li a .facebook img, #pb-footer .pb-footer-container .pb-footer-inner .pb-foot-sns .pb-foot-icons li a .insta img, #pb-footer .pb-footer-container .pb-footer-inner .pb-foot-sns .pb-foot-icons li a .youtube img { display: block; margin: 0 auto; }
+
+#pb-footer .pb-footer-container .pb-footer-inner .pb-foot-sns .pb-foot-icons li a .facebook a { display: block; width: 100%; }
+
+#pb-footer .pb-footer-container .pb-footer-inner .pb-foot-sns .pb-foot-icons li a .facebook a img { display: block; }
+
+#pb-footer .pb-footer-container .pb-footer-inner .pb-foot-sns .pb-foot-icons li a .youtube a { line-height: 22px; }
+
+#pb-footer .pb-footer-container .pb-footer-inner .pb-foot-sns .pb-foot-icons li a .youtube a img { width: 24px; }
+
+#pb-footer .pb-footer-container .pb-footer-inner .pb-foot-sns .brandsite { position: relative; width: 200px; height: 44px; border: 1px solid #fff; border-radius: 8px; padding: 0 30px 0 16px; box-sizing: border-box; }
+
+#pb-footer .pb-footer-container .pb-footer-inner .pb-foot-sns .brandsite .label { display: flex; justify-content: space-between; }
+
+#pb-footer .pb-footer-container .pb-footer-inner .pb-foot-sns .brandsite .label span { font-size: 1.4rem; color: #fff; line-height: 44px; }
+
+#pb-footer .pb-footer-container .pb-footer-inner .pb-foot-sns .brandsite .label i { font-size: 1.8rem; line-height: 44px; color: #fff; }
+
+#pb-footer .pb-footer-container .pb-footer-inner .pb-foot-sns .brandsite .links { display: none; position: absolute; bottom: 44px; left: 0; width: 200px; border-radius: 8px; background-color: #888; padding: 8px 0; }
+
+#pb-footer .pb-footer-container .pb-footer-inner .pb-foot-sns .brandsite .site-menu span { display: block; padding: 10px 14px; font-size: 1.2rem; color: #fff; opacity: 0.5; }
+
+#pb-footer .pb-footer-container .pb-footer-inner .pb-foot-sns .brandsite .site-menu .site-sub li { font-size: 1.2rem; line-height: 1.5; text-indent: 10px; padding: 10px 14px; }
+
+#pb-footer .pb-footer-container .pb-footer-inner .pb-foot-sns .brandsite .site-menu .site-sub a { color: #fff; }
+
+#pb-footer .pb-foot-privacy { width: 100%; margin: 0 auto; text-align: center; padding: 12px 0; }
+
+#pb-footer .pb-foot-privacy a { font-size: 11px; font-weight: 400; color: #fff; }
+
+#pb-footer .pb-foot-privacy a:after { content: '|'; display: inline; padding: 0 4px; color: #fff; }
+
+#pb-footer .pb-foot-privacy a:last-child:after { content: ''; }
+
+#pb-footer .pb-foot-line { width: 100%; background-color: #fff; height: 1px; opacity: 0.5; }
+
+#pb-footer .copyright { padding: 8px 0; text-align: center; }
+
+#pb-footer .copyright p { font-size: 10px; color: #999; }
